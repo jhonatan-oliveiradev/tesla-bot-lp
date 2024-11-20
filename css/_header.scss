@@ -1,0 +1,40 @@
+header {
+	padding: 4rem 0;
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.left {
+			display: flex;
+			align-items: center;
+			gap: 3.2rem;
+
+			.divider {
+				width: 2px;
+				height: 1.6rem;
+				background-color: var(--secondary-main);
+			}
+
+			span {
+				font-family: var(--font-secondary);
+				font-size: 1.8rem;
+				font-weight: 700;
+				line-height: 110%;
+				letter-spacing: 0.72px;
+				text-transform: uppercase;
+				display: block;
+			}
+		}
+
+		.nav {
+			display: flex;
+			gap: 2.4rem;
+			align-items: center;
+		}
+	}
+}

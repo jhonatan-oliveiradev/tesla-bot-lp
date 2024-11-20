@@ -1,0 +1,242 @@
+.s-hero {
+	position: relative;
+	width: 100%;
+	height: 108rem;
+	background: url("../img/bg-lines.svg") no-repeat var(--background-main) top
+		center;
+	overflow: hidden;
+	padding-top: 16.7rem;
+	padding-bottom: 7.6rem;
+
+	.robot {
+		position: absolute;
+		bottom: 0;
+		right: 14.2%;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	.left-container {
+		position: relative;
+		width: 100%;
+		max-width: 87.4rem;
+		z-index: 2;
+
+		h4 {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 1.8rem;
+			font-weight: 500;
+			letter-spacing: 0.72px;
+			padding: 1.6rem 3.2rem;
+			border-radius: 122px;
+			user-select: none;
+			border: 1.5px solid #282531;
+			background-color: var(--background-main);
+			box-shadow: 0px 6px 5px 0px rgb(180 180 180 / 0.25) inset;
+			margin-bottom: 3.2rem;
+		}
+
+		h1 {
+			color: var(--primary-dark);
+			font-size: 7.6rem;
+			font-weight: 700;
+			line-height: 120%;
+			text-transform: uppercase;
+			margin-bottom: 3.2rem;
+
+			img {
+				display: inline-block;
+			}
+		}
+
+		.description {
+			width: 100%;
+			max-width: 61.3rem;
+			padding-left: 14.5rem;
+
+			p {
+				color: var(--primary-dark);
+				font-size: 2rem;
+				line-height: 140%;
+				margin-bottom: 3.2rem;
+			}
+
+			.cta {
+				display: flex;
+				align-items: center;
+				gap: 2.8rem;
+
+				button {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					gap: 1.6rem;
+					padding: 12px 12px 12px 28px;
+					border-radius: 122px;
+					background-color: var(--primary-main);
+
+					span {
+						font-family: var(--font-secondary);
+						font-size: 1.8rem;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+
+				.price {
+					strong {
+						display: block;
+						font-family: var(--font-secondary);
+						font-size: 2rem;
+						line-height: 140%;
+						margin-bottom: 2px;
+					}
+
+					small {
+						display: block;
+						color: var(--primary-darker);
+						font-size: 1.6rem;
+						line-height: 140%;
+					}
+				}
+			}
+		}
+
+		.launching {
+			position: absolute;
+			width: 28.7rem;
+			height: 28.7rem;
+			top: -10.2rem;
+			right: -5.9rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.text {
+				position: absolute;
+				animation: rotate 20s linear infinite;
+			}
+		}
+	}
+
+	.second-content {
+		position: relative;
+		margin-top: -28.6rem;
+		display: flex;
+		align-items: flex-end;
+		gap: 4.2rem;
+
+		ul {
+			position: relative;
+			display: flex;
+			flex: 1;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 1.6rem;
+			max-width: 120.9rem;
+			z-index: 2;
+
+			li {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				gap: 2.4rem;
+				padding: 2.4rem;
+				border-radius: 24px;
+				border: 1px solid #3c3b46;
+				background-color: rgba(29 28 34 / 0.9);
+				backdrop-filter: blur(7px);
+				min-height: 14.8rem;
+
+				.image {
+					width: 10rem;
+					height: 10rem;
+					border-radius: 1rem;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.text {
+					p {
+						font-size: 1.8rem;
+						line-height: 110%;
+						margin-top: 2.4rem;
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+
+		.card-lg {
+			position: relative;
+			width: 44.3rem;
+			height: 52.3rem;
+			background: url("../img/rectangle-card.png") no-repeat center center;
+			padding: 0 4rem;
+			z-index: 2;
+
+			.thumb {
+				width: 100%;
+				max-width: 36.4rem;
+				height: 43.2rem;
+				border-radius: 2.4rem;
+				overflow: hidden;
+				margin-bottom: 2.2rem;
+				margin-top: -8.1rem;
+			}
+
+			p {
+				color: var(--primary-dark);
+				font-family: var(--font-secondary);
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 150%;
+				text-transform: uppercase;
+				max-width: 320px;
+				margin-bottom: 2.6rem;
+			}
+
+			.bar {
+				display: flex;
+				align-items: center;
+				gap: 2.9rem;
+
+				strong {
+					color: var(--primary-dark);
+					font-family: var(--font-secondary);
+					text-transform: uppercase;
+					font-size: 1.4rem;
+					line-height: 120%;
+				}
+			}
+
+			.icon {
+				position: absolute;
+				bottom: 1.6rem;
+				right: 1.9rem;
+			}
+		}
+
+		.we-robot {
+			position: absolute;
+			top: -25.5rem;
+			right: 0;
+		}
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
