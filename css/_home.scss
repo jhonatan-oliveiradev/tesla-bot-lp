@@ -7,6 +7,13 @@
 	overflow: hidden;
 	padding-top: 16.7rem;
 	padding-bottom: 7.6rem;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+
+	@media screen and (max-width: 834px) {
+		padding-top: 11.6rem;
+		height: 133.7rem;
+	}
 
 	.robot {
 		position: absolute;
@@ -14,6 +21,11 @@
 		right: 14.2%;
 		pointer-events: none;
 		z-index: 1;
+
+		@media screen and (max-width: 834px) {
+			right: -10%;
+			bottom: 25rem;
+		}
 	}
 
 	.left-container {
@@ -32,6 +44,7 @@
 			border-radius: 122px;
 			user-select: none;
 			border: 1.5px solid #282531;
+			color: var(--primary-darker);
 			background-color: var(--background-main);
 			box-shadow: 0px 6px 5px 0px rgb(180 180 180 / 0.25) inset;
 			margin-bottom: 3.2rem;
@@ -45,6 +58,11 @@
 			text-transform: uppercase;
 			margin-bottom: 3.2rem;
 
+			@media screen and (max-width: 834px) {
+				font-size: 5.6rem;
+				max-width: 65.1rem;
+			}
+
 			img {
 				display: inline-block;
 			}
@@ -55,17 +73,31 @@
 			max-width: 61.3rem;
 			padding-left: 14.5rem;
 
+			@media screen and (max-width: 834px) {
+				padding-left: 0;
+				max-width: 38.2rem;
+			}
+
 			p {
 				color: var(--primary-dark);
 				font-size: 2rem;
 				line-height: 140%;
 				margin-bottom: 3.2rem;
+
+				@media screen and (max-width: 834px) {
+					font-size: 1.8rem;
+				}
 			}
 
 			.cta {
 				display: flex;
 				align-items: center;
 				gap: 2.8rem;
+
+				@media screen and (max-width: 834px) {
+					flex-direction: column;
+					align-items: flex-start;
+				}
 
 				button {
 					display: inline-flex;
@@ -113,6 +145,11 @@
 			align-items: center;
 			justify-content: center;
 
+			@media screen and (max-width: 834px) {
+				top: -4.5rem;
+				right: -3rem;
+			}
+
 			.text {
 				position: absolute;
 				animation: rotate 20s linear infinite;
@@ -126,6 +163,13 @@
 		display: flex;
 		align-items: flex-end;
 		gap: 4.2rem;
+
+		@media screen and (max-width: 834px) {
+			flex-direction: column-reverse;
+			margin-top: 10rem;
+			align-items: flex-start;
+			gap: 2rem;
+		}
 
 		ul {
 			position: relative;
@@ -149,11 +193,21 @@
 				backdrop-filter: blur(7px);
 				min-height: 14.8rem;
 
+				@media screen and (max-width: 834px) {
+					padding: 1.6rem;
+					min-height: 10.8rem;
+				}
+
 				.image {
 					width: 10rem;
 					height: 10rem;
 					border-radius: 1rem;
 					overflow: hidden;
+
+					@media screen and (max-width: 834px) {
+						width: 8rem;
+						height: 8rem;
+					}
 
 					img {
 						width: 100%;
@@ -168,6 +222,11 @@
 						line-height: 110%;
 						margin-top: 2.4rem;
 						white-space: nowrap;
+
+						@media screen and (max-width: 834px) {
+							font-size: 1.6rem;
+							white-space: normal;
+						}
 					}
 				}
 			}
@@ -175,11 +234,23 @@
 
 		.card-lg {
 			position: relative;
+			display: flex;
+			flex-direction: column;
 			width: 44.3rem;
 			height: 52.3rem;
 			background: url("../img/rectangle-card.png") no-repeat center center;
 			padding: 0 4rem;
 			z-index: 2;
+
+			@media screen and (max-width: 834px) {
+				flex-direction: row;
+				gap: 2rem;
+				align-items: center;
+				width: 52.3rem;
+				height: 34.6rem;
+				background: url("../img/rectangle-card-horizontal.png") no-repeat center
+					center;
+			}
 
 			.thumb {
 				width: 100%;
@@ -189,30 +260,48 @@
 				overflow: hidden;
 				margin-bottom: 2.2rem;
 				margin-top: -8.1rem;
+
+				@media screen and (max-width: 834px) {
+					width: 26.7rem;
+					height: 31.6rem;
+					margin-left: -2rem;
+				}
 			}
 
-			p {
-				color: var(--primary-dark);
-				font-family: var(--font-secondary);
-				font-size: 1.6rem;
-				font-weight: 500;
-				line-height: 150%;
-				text-transform: uppercase;
-				max-width: 320px;
-				margin-bottom: 2.6rem;
-			}
+			.card-lg-desc {
+				@media screen and (max-width: 834px) {
+					display: flex;
+					flex-direction: column-reverse;
+					gap: 3.2rem;
+				}
 
-			.bar {
-				display: flex;
-				align-items: center;
-				gap: 2.9rem;
-
-				strong {
+				p {
 					color: var(--primary-dark);
 					font-family: var(--font-secondary);
+					font-size: 1.6rem;
+					font-weight: 500;
+					line-height: 150%;
 					text-transform: uppercase;
-					font-size: 1.4rem;
-					line-height: 120%;
+					max-width: 320px;
+					margin-bottom: 2.6rem;
+				}
+
+				.bar {
+					display: flex;
+					align-items: center;
+					gap: 2.9rem;
+
+					strong {
+						color: var(--primary-dark);
+						font-family: var(--font-secondary);
+						text-transform: uppercase;
+						font-size: 1.4rem;
+						line-height: 120%;
+
+						@media screen and (max-width: 834px) {
+							display: none;
+						}
+					}
 				}
 			}
 
@@ -220,6 +309,10 @@
 				position: absolute;
 				bottom: 1.6rem;
 				right: 1.9rem;
+
+				@media screen and (max-width: 834px) {
+					bottom: 2.5rem;
+				}
 			}
 		}
 
@@ -227,6 +320,10 @@
 			position: absolute;
 			top: -25.5rem;
 			right: 0;
+
+			@media screen and (max-width: 834px) {
+				display: none;
+			}
 		}
 	}
 }
